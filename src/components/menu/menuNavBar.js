@@ -8,7 +8,7 @@ function NavBar() {
   return (
     <div className="mnav">
       <div className="mnav__left">
-        <div className="nav-logo">
+        <div className="mnav-logo">
           <Link to="/">
             <img
               src={logoWhite}

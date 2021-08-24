@@ -17,6 +17,73 @@ import axios from "axios";
 class MainNews extends React.Component {
   state = {
     newsData: [],
+    blogsData: [
+      {
+        title: "LomArt Exhibition: Colour Theory",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=rTuatfZo2X0",
+        poster_image:
+          "https://drive.google.com/file/d/1I-_x9wnaAY4uwb_kgtt5O5M-yD-H9so1/view?usp=sharing",
+      },
+      {
+        title: "Les réseaux sociaux : dangers et opportunités",
+        type: "blog",
+        url: "https://lomads.medium.com/les-r%C3%A9seaux-sociaux-dangers-et-opportunit%C3%A9s-2378b0addce5",
+        poster_image:
+          "https://drive.google.com/file/d/19BYY6_VItBMBTxtzgr-mvJkuK3jlcuqG/view?usp=sharing",
+      },
+      {
+        title:
+          "Paris Filmmakers Collective // Cohort #1 Film Shoot - Behind the Scenes",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=SPp6wiBv6_A",
+        poster_image:
+          "https://drive.google.com/file/d/1UV5uXDnLXWZxM7CaRkWaUB4DAavDFGCD/view?usp=sharing",
+      },
+      {
+        title: "A New Twist in The Social Media Tale",
+        type: "blog",
+        url: "https://lomads.medium.com/a-new-twist-in-the-social-media-tale-b895c34f9d97",
+        poster_image:
+          "https://drive.google.com/file/d/1TwMRtbrz1EJ_OQezoD9xfi9D7Ps545H3/view?usp=sharing",
+      },
+      {
+        title: "Eco Fashion Awards",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=VPP5UWczdp4",
+        poster_image:
+          "https://drive.google.com/file/d/1XZPbg9m50qS5VRugZnhCquVlbYo14THa/view?usp=sharing",
+      },
+      {
+        title:
+          "Intercultural Couples share quirks and delights of their relationships",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=2z4TV66eBtU",
+        poster_image:
+          "https://drive.google.com/file/d/1IKxJLZNuaown1ZuvrMMhoNHV3FGYxi_N/view?usp=sharing",
+      },
+      {
+        title: "Small Business Pop-up 2",
+        type: "video",
+        url: "https://www.youtube.com/watch?v=8irOYC9YR5g",
+        poster_image:
+          "https://drive.google.com/file/d/1e3tLx5DlFHZxwB4Dn5qQR_HCRemDos-n/view?usp=sharing",
+      },
+      {
+        title: "Your Primer to Sustainable Fashion",
+        type: "blog",
+        url: "https://lomads.medium.com/your-primer-to-sustainable-fashion-3bdf46986862",
+        poster_image:
+          "https://drive.google.com/file/d/1PGmfe-mzpaR2Z0XoJ5E7Y4xaFM-rk_Ys/view?usp=sharing",
+      },
+      {
+        title: "Why are We so Afraid of Everything That is New?",
+        type: "blog",
+        url: "https://lomads.medium.com/why-are-we-so-afraid-of-everything-that-is-new-22ea1abfb8d1",
+        poster_image:
+          "https://drive.google.com/file/d/1bdFtEwL3-gWXxITfMitM9MxL41NceQh3/view?usp=sharing",
+      },
+    ],
   };
   componentDidMount() {
     axios.get(`https://lomads.free.beeceptor.com/active-events`).then((res) => {
@@ -24,6 +91,11 @@ class MainNews extends React.Component {
       this.setState({ newsData });
       console.log("newsData", newsData);
     });
+    // axios.get(`https://lomads.free.beeceptor.com/active-events`).then((res) => {
+    //   const newsData = res.data;
+    //   this.setState({ newsData });
+    //   console.log("newsData", newsData);
+    // });
   }
   render() {
     return (
@@ -97,10 +169,20 @@ class MainNews extends React.Component {
         <div className="bottom-col">
           <div className="news-img-sec">
             <div className="left-col-text">Actualités</div>
-            <div>
-              <div className="card-img-div"></div>
-              <div className="card-img-div"></div>
-              <div className="card-img-div"></div>
+            <div className="blogs-section">
+              {this.state.blogsData.map((blog) => {
+                return (
+                  <>
+                    <a
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      href={blog.url}
+                    >
+                      <div className="card-img-div">HI</div>
+                    </a>
+                  </>
+                );
+              })}
             </div>
 
             <div className="partner-button">
@@ -120,6 +202,8 @@ class MainNews extends React.Component {
                   alt="cardImage"
                   width="80px"
                   height="80px"
+                  className="main-news-img"
+                  style={{ objectFit: "contain !important" }}
                 />
                 <div className="img-container1">
                   <div>
@@ -143,6 +227,7 @@ class MainNews extends React.Component {
                   alt="cardImage"
                   width="80px"
                   height="80px"
+                  className="main-news-img"
                 />
                 <div className="img-container1">
                   <div>
@@ -166,6 +251,7 @@ class MainNews extends React.Component {
                   alt="cardImage"
                   width="80px"
                   height="80px"
+                  className="main-news-img"
                 />
                 <div className="img-container1">
                   <div>
@@ -189,6 +275,7 @@ class MainNews extends React.Component {
                   alt="cardImage"
                   width="80px"
                   height="80px"
+                  className="main-news-img"
                 />
                 <div className="img-container1">
                   <div>
@@ -212,6 +299,7 @@ class MainNews extends React.Component {
                   alt="cardImage"
                   width="80px"
                   height="80px"
+                  className="main-news-img"
                 />
                 <div className="img-container1">
                   <div>

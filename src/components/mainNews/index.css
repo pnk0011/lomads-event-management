@@ -252,3 +252,12 @@
 .carousel .slider-wrapper {
   width: 82% !important;
 }
+
+.blogs-section {
+  height: 760px;
+  overflow-y: hidden;
+}
+
+img.main-news-img {
+  object-fit: contain !important;
+}

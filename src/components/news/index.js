@@ -1,6 +1,8 @@
 import React from "react";
 import { withTranslation } from "react-i18next";
 import "./index.css";
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import axios from "axios";
 
 const NewsSection = (props) => {
   const { t } = props;

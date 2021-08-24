@@ -1,6 +1,6 @@
 .menu-content-container {
   background-color: #c94b32;
-  margin-top: 70px;
+ 
 }
 
 .content-wrapper {
@@ -8,6 +8,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: calc(100vh - 100px);
 }
 
 .content-style {

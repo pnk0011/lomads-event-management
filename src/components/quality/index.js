@@ -34,26 +34,42 @@ class Rejoin extends React.Component {
             </div>
           </div>
           <div className="quality-img">
-            <div>
-              <div className="quality-back-001"></div>
-              <img
+              <div className="quality-back-001">
+                <div className="bg-text">
+                « En confrontant nos expériences, nous avons remarqué qu’il était 
+                toujours difficile, en arrivant dans une nouvelle ville, de se créer un cercle 
+                d’amis et de poursuivre les activités qui nous tenaient à cœur. 
+                <b>Mais nous étions convaincus qu’il était possible de trouver une solution à ce problème. »</b>
+                </div>
+              </div>
+              <div className="image-human">
+                <div className="name-text">Nishant + Naman</div>
+                <div>
+                <img
                 src={QualityImg1}
                 alt="borderImg"
                 width="324px"
                 height="231px"
-                clas
+                
                 sName="img-border"
               />
-              <div className="quality-back-001"></div>
-            </div>
+                </div>
+            
+              </div>
+             
+              <div className="quality-back-002">
+              <div className="bg-text2">
+              « En fait, nous nous sommes rendus compte que connectés aux réseaux sociaux, nous sommes surtout déconnectés de la réalité.<b> La crise liée au COVID-19 a prouvé que rien ne remplace le contact humain.</b> Lomads s’inspire de cette prise de conscience pour vous aider à créer des liens et à trouver votre place au sein d’une communauté. »
+                </div>
+              </div>
           </div>
-          <div className="img-bottom-text">
-            <div className="rejoin-text3">
+          <div className="quality-img-bottom-text">
+            <div className="quality-text3">
               Paris comme premier terrain de jeu
             </div>
 
-            <div className="rejoin-text2">
-              <div className="text-wrapper">
+            <div className="quality-text2">
+              <div className="quality-text-wrapper">
                 Paris est le lieu idéal pour lancer Lomads. Avec son riche
                 patrimoine historique et culturel, Paris est une ville à taille
                 humaine qui vit au rythme de ses arrondissements, de ses

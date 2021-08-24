@@ -28,7 +28,8 @@ class NavBar extends React.Component {
               <img src={logo} className="nav-logo__image" alt="Logo" />
             </Link>
           </div>
-          <span className="nav-tagline">{t("navBarText")}</span>
+          <div> <span className="nav-tagline">{t("navBarText")}</span></div>
+         
         </div>
 
         <div className="nav__right">
@@ -49,9 +50,9 @@ class NavBar extends React.Component {
           </div>
           <div className="nav-menu">
             <div className="menu-text">MENU</div>
-            <div style={{ marginLeft: "22px", cursor: "pointer" }}>
+            <div style={{ marginLeft: "22px", cursor: "pointer",marginRight:"30px" }}>
               <Link to="/menu">
-                <img src={Menu} alt="menu" />
+                <img src={Menu} alt="menu" style={{position:"fixed"}} />
               </Link>
             </div>
           </div>

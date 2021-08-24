@@ -3,6 +3,7 @@
   align-items: center;
   padding: 18px 30px;
   justify-content: space-between;
+  
 }
 
 .nav__left {
@@ -10,11 +11,15 @@
   align-items: center;
 }
 
+.nav-logo{
+  position: fixed;
+  z-index: 9999;
+}
 .nav-tagline {
   font-style: italic;
   font-size: 16px;
   color: #1b2b41;
-  margin-left: 32px;
+  margin-left: 182px;
 }
 
 .nav__right {
