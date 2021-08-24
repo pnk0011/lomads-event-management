@@ -1,0 +1,38 @@
+.menu-content-container {
+  background-color: #c94b32;
+  margin-top: 70px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-style {
+  font-size: 60px;
+  font-family: Insignia;
+  color: #ffffff;
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .menu-content-container {
+    margin-top: 0px;
+  }
+
+  .content-style {
+    font-size: 34px;
+  }
+
+  .content-wrapper {
+    align-items: flex-end;
+    padding: 24px;
+  }
+
+  .content-wrapper a {
+    margin-top: 65px;
+  }
+}

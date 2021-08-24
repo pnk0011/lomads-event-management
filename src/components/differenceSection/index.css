@@ -1,0 +1,82 @@
+.notre-différence {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.difference-section {
+  padding-bottom: 5%;
+  z-index: 10;
+  background-color: #ffffff;
+}
+
+.notre-différence-text {
+  color: #c94b32;
+  font-size: 25px;
+
+  font-family: Insignia;
+  z-index: 3;
+}
+
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.diff-heading {
+  font-size: 20px;
+  color: #ff8200;
+  font-family: Insignia;
+}
+
+.diff-text1 {
+  font-size: 15px;
+  color: #1b2b41;
+  text-align: center;
+  width: 75%;
+  font-family: Open Sans;
+}
+.img {
+  display: flex;
+  justify-content: center;
+}
+
+.devenir-lomads-button {
+  width: 147px;
+  height: 38px;
+  background-color: #ff8200;
+  color: #ffffff;
+  border-radius: 10px;
+  border: #7c7a77;
+  font: Insignia, Roman;
+}
+
+.diff-sec-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.diff-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .column {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+
+  .margin-y {
+    margin: 40px 0px;
+  }
+}

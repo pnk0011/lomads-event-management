@@ -1,0 +1,111 @@
+.comment-section {
+  background-color: #c94b32;
+  position: relative;
+  z-index: -11;
+}
+
+.comment-top-border {
+  margin-top: -1px;
+  top: 0;
+  width: 100%;
+}
+
+.comment-bott-border {
+  bottom: 0;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: -10px;
+}
+
+.comment-text {
+  margin-left: 18%;
+
+  color: #ffffff;
+  font-size: 25px;
+  font-family: Insignia;
+}
+
+.suggestion-sec {
+  display: flex;
+  justify-content: space-around;
+}
+
+.des-suggestions {
+  color: #ffffff;
+  font-size: 30px;
+  font: Insignia, Roman;
+  text-align: center;
+  max-width: 324px;
+  margin-bottom: 10px;
+}
+
+.suggestions-text1 {
+  font-size: 15px;
+  text-align: center;
+  font-family: Open Sans;
+}
+
+img {
+  object-fit: cover !important;
+}
+.suggestion-sec-text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.suggestion-bottom-sec {
+  display: flex;
+  margin-left: 5%;
+}
+
+.devenir-lomads-button {
+  width: 147px;
+  height: 38px;
+  background-color: #ff8200;
+  color: #ffffff;
+  border-radius: 10px;
+  border: #ff8200;
+  font-family: Insignia, Roman;
+  font-size: 14px;
+}
+
+.border-height {
+  z-index: 10;
+}
+
+@media (max-width: 1024px) {
+  .comment-section {
+    padding: 40px 0px;
+  }
+
+  .none {
+    display: none;
+  }
+
+  .suggestion-sec {
+    justify-content: unset;
+  }
+
+  .block {
+    display: block;
+  }
+
+  .comment-text {
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.comment-sec-background-img {
+  background: url("../assets/suggestion-img4.svg") no-repeat center;
+  z-index: 100;
+}

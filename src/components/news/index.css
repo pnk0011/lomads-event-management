@@ -1,0 +1,42 @@
+.news-section {
+  background-color: #ffffff;
+}
+
+.news-desc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-desc-text {
+  color: #ff8200;
+  font-size: 25px;
+  font-family: Insignia;
+}
+
+.news-img {
+  width: 370px;
+  height: 239px;
+  border-radius: 10px;
+  background-image: url("../assets/office-news.jpg");
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin-left: 16px;
+}
+
+.news-img-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1%;
+  margin-bottom: 44px;
+}
+
+@media (max-width: 1024px) {
+  .news-section {
+    display: none;
+  }
+
+  .width100 {
+    width: 100%;
+  }
+}

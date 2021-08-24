@@ -1,5 +1,1 @@
-# Lomads Events Website
-
-Lomads WEbsite
-
-#Latest changes
+# Lomads WEbsite

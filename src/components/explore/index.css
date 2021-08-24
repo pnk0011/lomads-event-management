@@ -1,0 +1,137 @@
+.explore {
+}
+
+.home-text4 {
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+  font-family: OpenSans, Open Sans;
+  font-weight: 400;
+  color: #1b2b41;
+  text-align: center;
+  width: 35%;
+}
+
+.home-text4-center {
+  display: flex;
+  justify-content: center;
+}
+
+.home-text3 {
+  font-size: 18px;
+  font-family: HelveticaNeue-Bold, Helvetica Neue;
+  font-weight: 700;
+  color: #1b2b41;
+  display: flex;
+  justify-content: center;
+}
+
+.dummy-text2 {
+  margin-top: 15px;
+}
+.dummy-text {
+  font-family: Insignia;
+  font-size: 40px;
+  color: #ff8200;
+  display: flex;
+  justify-content: center;
+}
+
+.dummy-text1 {
+  font-family: Insignia;
+  font-size: 40px;
+  color: #c94b32;
+  display: flex;
+  justify-content: center;
+}
+
+.bg-section {
+  display: flex;
+  justify-content: center;
+  background: url("../assets/home-bg.svg") no-repeat center;
+  height: 550px;
+
+  background-repeat: no-repeat;
+
+  position: relative;
+}
+
+.empty-phone {
+  background-image: url("../assets/empty-phone.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  /* margin-left: 72%; */
+  position: fixed;
+  z-index: -9;
+  /* left: calc(50% - 133px); */
+  height: 420px;
+  width: 188px;
+  margin-top: 50px;
+}
+
+.bg-phone {
+  background-image: url("../assets/bg-phone.svg");
+}
+
+.explore-bottom {
+  display: flex;
+  justify-content: space-around;
+  z-index: 1;
+}
+
+.explore-bottom-text1 {
+  font-size: 20px;
+  font-family: Insignia;
+  font-weight: 700;
+  color: #ff8200;
+}
+
+.img-container {
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-img {
+  margin-top: 24px;
+  margin-left: 5px;
+}
+
+@media (max-width: 1024px) {
+  .explore {
+    margin-top: 40px;
+  }
+
+  .mobile-text {
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+
+  .explore-bottom {
+    flex-direction: column;
+  }
+
+  .explore-bottom > div {
+    margin: 40px 0px;
+  }
+
+  .explore-bottom > div img {
+    margin: 20px 0px;
+  }
+}
+
+.text-center {
+  margin-top: 20px;
+}
+
+.find-community-text {
+  text-align: center;
+  width: 65%;
+}
+
+.find-community-text-align {
+  display: flex;
+  justify-content: center;
+}

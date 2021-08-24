@@ -1,0 +1,254 @@
+.main-news {
+  background-color: #c94b32;
+}
+
+.news-text {
+  color: #ffffff;
+  font-size: 40px;
+  font-family: Insignia;
+  text-align: center;
+}
+
+.news-text1 {
+  color: #ffffff;
+  font-size: 25px;
+  font-family: Insignia;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.card-slider {
+  display: flex;
+  justify-content: space-between;
+  background-color: #147769;
+  width: 1004px;
+  height: 95px;
+  border-radius: 48px;
+  bottom: -25px;
+  position: absolute;
+}
+
+.card-slider-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 1004px;
+}
+
+.card-container {
+  display: flex;
+  z-index: 1;
+  position: relative;
+}
+
+.arrow-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 38px;
+  padding-right: 38px;
+  cursor: pointer;
+  width: max-content !important;
+  z-index: 19;
+}
+
+.arrow-icon img {
+  width: auto !important;
+}
+
+.news-border-img {
+  background-color: #c94b32;
+  margin-bottom: -5px;
+}
+
+.left-col-text {
+  color: #c94b32;
+  font-size: 25px;
+  font-family: Insignia;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.news-img-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.devenir-lomads-button {
+  width: 165px;
+  height: 40px;
+  background-color: #ff8200;
+  color: #ffffff;
+  border-radius: 10px;
+  border: #ff8200;
+  font: Insignia, Roman;
+  font-size: 12px;
+}
+
+.bottom-col {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.partner-button {
+  display: flex;
+  justify-content: center;
+}
+
+.card-div {
+  display: flex;
+  border-bottom: 1px dashed #1b2b4180;
+}
+
+.img-container1 {
+  display: flex;
+  margin-top: 6px;
+  margin-left: 11px;
+}
+
+.img-desc-text1 {
+  color: #1b2b41;
+  font-size: 20px;
+  font-family: Insignia;
+}
+
+.img-desc-text2 {
+  color: #1b2b41;
+  font-size: 15px;
+  font-family: Open Sans;
+}
+
+.tags {
+  border: 1px solid #1b2b4180;
+  border-radius: 10px;
+  opacity: 0.5;
+  height: 15px;
+  font-size: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-top: 5px;
+  margin-right: 3px;
+}
+.tag-date {
+  color: #1b2b41;
+  font-size: 12px;
+  font-family: Open Sans;
+}
+
+.tag-time {
+  color: #1b2b41;
+  font-size: 12px;
+  font-family: Open Sans;
+  font-weight: bold;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.news-button {
+  width: 134px;
+  height: 38px;
+  background-color: #ff8200;
+  color: #ffffff;
+  border-radius: 10px;
+  border: #ff8200;
+  font: Insignia, Roman;
+  font-size: 12px;
+  margin-top: 40px;
+}
+
+.card-img-div {
+  margin-bottom: 15px;
+  background-image: url("../assets/news-office-img.png");
+  width: 370px;
+  height: 239px;
+  border-radius: 10px;
+}
+
+.border-bottom-div {
+  background-color: #1b2b41;
+  height: 200px;
+  margin-top: -6px;
+}
+
+.border-text {
+  color: #ffffff;
+  font-size: 25px;
+  font-family: Insignia;
+  text-align: center;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-div {
+  margin-top: 10px;
+  margin-right: 15px;
+}
+
+.footer-text1 {
+  font-size: 14px;
+  color: #ffffff;
+  font-family: Insignia;
+}
+
+.footer-text2 {
+  font-size: 12px;
+  color: #ffffff;
+  font-family: Open Sans;
+  opacity: 0.5;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.logo-wrapper {
+  display: flex;
+}
+
+.tag-div {
+  margin-left: 20px;
+}
+
+.card-container .slide {
+  min-width: 239px !important;
+  margin-left: 30px !important;
+}
+
+.carousel.carousel-slider {
+  position: static !important;
+}
+
+.right-icon {
+  position: absolute;
+  bottom: 8px;
+}
+
+.left-icon {
+  position: absolute;
+  bottom: 8px;
+  right: 0px;
+}
+
+.base {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.carousel .carousel-slider ul {
+  width: 1004px;
+}
+
+.carousel .slider-wrapper {
+  width: 82% !important;
+}

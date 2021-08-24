@@ -1,0 +1,27 @@
+.menu {
+  background-color: #c94b32;
+  height: 100vh;
+  position: relative;
+}
+
+.image-pnk {
+  position: absolute;
+  margin-left: 50%;
+}
+
+.menu-img-bottom {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: 3%;
+  bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .image-pnk {
+    display: none;
+  }
+
+  .mnav-tagline {
+    display: none;
+  }
+}
