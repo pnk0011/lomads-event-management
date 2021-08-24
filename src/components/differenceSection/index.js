@@ -14,7 +14,7 @@ const DifferenceSection = (props) => {
         <p className="notre-différence-text"> {t("HowAreWeDifferent")}</p>
       </div>
       <div className="flex-around column margin-y">
-        <div>
+        <div style={{ width: "35%" }}>
           <div className="img">
             <img src={ImgUrl1} alt="desc" />
           </div>
@@ -32,17 +32,19 @@ const DifferenceSection = (props) => {
             </p>
           </div>
         </div>
-        <div className="margin-y">
+        <div className="margin-y" style={{ width: "35%" }}>
           <div className="img">
             <img src={ImgUrl2} alt="desc" />
           </div>
           <div className="diff-text-wrapper text-center">
-            <div className="diff-heading text-center">{t("DiffSectionText2")}</div>
+            <div className="diff-heading text-center">
+              {t("DiffSectionText2")}
+            </div>
 
             <div className="diff-text1">{t("DiffSectionSubText2")}</div>
           </div>
         </div>
-        <div className="margin-y">
+        <div className="margin-y" style={{ width: "35%" }}>
           <div className="img">
             <img src={ImgUrl3} alt="desc" />
           </div>

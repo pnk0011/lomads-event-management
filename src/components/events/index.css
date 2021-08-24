@@ -22,37 +22,59 @@
   font-family: Insignia;
 }
 
-.card-container {
+.card-container-event {
   display: flex;
   z-index: 1;
+  position: relative;
 }
 
-.card-slider {
+.card-container-event .slide {
+  min-width: 239px !important;
+  margin-left: 30px !important;
+}
+.carousel .slider-wrapper {
+  width: 82% !important;
+}
+.card-slider-events {
   display: flex;
   justify-content: space-between;
   background-color: #c94b32;
   width: 1004px;
   height: 95px;
   border-radius: 48px;
-  bottom: -25px;
+  bottom: 25px;
   position: absolute;
 }
 
-.card-slider-container {
+.card-slider-container-event {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  width: 1004px;
 }
 
-.arrow-icon {
+.arrow-icon-event {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 38px;
   padding-right: 38px;
   cursor: pointer;
+  width: max-content !important;
+  z-index: 19;
+}
+
+.right-icon-event {
+  position: absolute;
+  bottom: 0px;
+}
+
+.left-icon-event {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
 }
 
 @media (max-width: 1024px) {

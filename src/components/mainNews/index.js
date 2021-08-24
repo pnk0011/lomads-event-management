@@ -9,6 +9,8 @@ import NeNewsBorderImg from "../assets/news-border-img.png";
 import FacebookLogo from "../assets/news-facebook-logo.svg";
 import InstaLogo from "../assets/news-insta-logo.svg";
 import TwitterLogo from "../assets/twitter-logo.svg";
+import CalanderIcon from "../assets/calander-icon.png";
+import FootballIcon from "../assets/football-icon.png";
 import "./index.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -16,7 +18,69 @@ import axios from "axios";
 
 class MainNews extends React.Component {
   state = {
-    newsData: [],
+    newsData: [
+      {
+        event_title: "Day Trip to Auvers sur Oise",
+        event_venue_short: "Paris",
+        event_venue_long:
+          "Gare du Nord, 18 Rue de Dunkerque, 75010 Paris, France",
+        start_date: "13/08/2021",
+        start_time: "12h00",
+        end_time: "19h00",
+        ticket_price: "23",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1V2mYz0W4SIfxQMZjsMGuC0_24Gf_Jr4v",
+        duration: "",
+      },
+      {
+        event_title: "Paint & Drink Apero Session: Vin & van Gogh",
+        event_venue_short: "Paris",
+        event_venue_long: "Port Debilly, Paris",
+        start_date: "15/08/2021",
+        start_time: "18h00",
+        end_time: "20h00",
+        ticket_price: "Free",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=13lNsaeX2jVeEKv7vL2yHzoQh-S43ySci",
+        duration: "",
+      },
+      {
+        event_title: "Acoustic Jam Session",
+        event_venue_short: "Paris",
+        event_venue_long: "Tennessee, 12 Rue André Mazet, 75006 Paris",
+        start_date: "15/08/2021",
+        start_time: "19h00",
+        end_time: "21h00",
+        ticket_price: "Free",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1NagWQEoRfEiGN4Ae703UyYk8-YrNpVMm",
+        duration: "",
+      },
+      {
+        event_title: "Un Jour Sans Fin Comedy Club",
+        event_venue_short: "Paris",
+        event_venue_long: "La base, 31 Rue Bichat, 75010 Paris",
+        start_date: "21/08/2021",
+        start_time: "19h00",
+        end_time: "21h00",
+        ticket_price: "Free",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1BulgJQn0UOJYRzePHi5Oz8znO9rfxolf",
+        duration: "",
+      },
+      {
+        event_title: "Young Fashion Creator's Pop Up",
+        event_venue_short: "Paris",
+        event_venue_long: "4 Rue Pastourelle, 75003 Paris",
+        start_date: "28/08/2021",
+        start_time: "11h00",
+        end_time: "19h00",
+        ticket_price: "Free",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1TgAlNBzduWSc95Iob6zKm2NRIWp3uf0y",
+        duration: "",
+      },
+    ],
     blogsData: [
       {
         title: "LomArt Exhibition: Colour Theory",
@@ -84,13 +148,146 @@ class MainNews extends React.Component {
           "https://drive.google.com/file/d/1bdFtEwL3-gWXxITfMitM9MxL41NceQh3/view?usp=sharing",
       },
     ],
+    pastEvents: [
+      {
+        title: "Small Biz Pop-up Market",
+        type: "event",
+        description:
+          "Products from 14 creatives and small-business owners were on display",
+        start_date: "28/08/2021",
+        start_time: "11h00",
+        end_time: "19h00",
+        tags: "Shopping, Cause, Sustainability",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1O-suGDsho8noaFnM0Kfl0CSx-c1IotQ9",
+      },
+      {
+        title: "Paris Filmmakers' Collective",
+        type: "group",
+        description:
+          "Collective of filmmakers and actors, both professionals and enthusiasts, who not only talk about filmmaking about make films together",
+        start_date: "",
+        start_time: "",
+        end_time: "",
+        tags: "Filmmaking, Creative",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1O-suGDsho8noaFnM0Kfl0CSx-c1IotQ9",
+      },
+      {
+        title: "LomArt Exhibition",
+        type: "event",
+        description:
+          "An immersive art exhibition featuring nine international artists with varied techniques and media and six musicians playing live at different times",
+        start_date: "25/07/2021",
+        start_time: "12h00",
+        end_time: "20h00",
+        tags: "",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1O-suGDsho8noaFnM0Kfl0CSx-c1IotQ9",
+      },
+      {
+        title: "Military Style Bootcamp in Open Air",
+        type: "event",
+        description:
+          "A military style boot-camp in Bois de Boulogne by the large waterfall",
+        start_date: "29/05/2021",
+        start_time: "11h00",
+        end_time: "12h30",
+        tags: "",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1O-suGDsho8noaFnM0Kfl0CSx-c1IotQ9",
+      },
+      {
+        title: "Eco Fashion Award",
+        type: "event",
+        description:
+          'Teams consisting of photographers, sustainable fashion brands, makeup artists and models competed in a 4 hour action-packed challenge to "Create a fashion magazine cover"',
+        start_date: "04/06/2021",
+        start_time: "13h00",
+        end_time: "19h00",
+        tags: "",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1O-suGDsho8noaFnM0Kfl0CSx-c1IotQ9",
+      },
+      {
+        title: "La Bibliophilie",
+        type: "group",
+        description: "Fortnightly meetup of female book-lovers in Paris",
+        start_date: "",
+        start_time: "",
+        end_time: "",
+        tags: "Books, Discussion Forum",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1O-suGDsho8noaFnM0Kfl0CSx-c1IotQ9",
+      },
+      {
+        title: "Inter-Cultural Couple Apero",
+        type: "event",
+        description:
+          "Social event for intercultural couples with a custom-designed game to get to know each other better and on the side-lines, interview for our YouTube channel; answering questions about cultural diversity and nuances.",
+        start_date: "20/06/2021",
+        start_time: "16h00",
+        end_time: "18h00",
+        tags: "Expat, Inter-cultural, Social",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1O-suGDsho8noaFnM0Kfl0CSx-c1IotQ9",
+      },
+      {
+        title: "Acoustic Jam Session",
+        type: "event",
+        description:
+          "Lomads' Open Jams are great for musicians who are interested in networking with other like-minded artists, from beginners to professionals in all genres",
+        start_date: "10/07/2021",
+        start_time: "19h00",
+        end_time: "21h30",
+        tags: "Musicians, Jamming, Networking",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1O-suGDsho8noaFnM0Kfl0CSx-c1IotQ9",
+      },
+      {
+        title: "Melange - Creative Catchups",
+        type: "group",
+        description:
+          "Mélange is a monthly meet-up that gives creatives a space to network and to co-create",
+        start_date: "",
+        start_time: "",
+        end_time: "",
+        tags: "Creative, Freelancers, Networking",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1O-suGDsho8noaFnM0Kfl0CSx-c1IotQ9",
+      },
+      {
+        title: "Paint & Drink Apero Session: Vin & van Gogh",
+        type: "event",
+        description:
+          "Paint in a scenic location while enjoying some good wine. We provide all the material, you just unleah your inner artist",
+        start_date: "20/07/2021",
+        start_time: "17h00",
+        end_time: "19h30",
+        tags: "Painting, Food & Drinks",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1O-suGDsho8noaFnM0Kfl0CSx-c1IotQ9",
+      },
+      {
+        title: "Montmartre Treasure Hunt",
+        type: "event",
+        description:
+          "A treasure hunt in the magnificent quartier of Montmartre",
+        start_date: "10/09/2021",
+        start_time: "16h00",
+        end_time: "18h00",
+        tags: "Fun, Social",
+        thumbnail_img:
+          "https://drive.google.com/uc?id=1O-suGDsho8noaFnM0Kfl0CSx-c1IotQ9",
+      },
+    ],
   };
   componentDidMount() {
-    axios.get(`https://lomads.free.beeceptor.com/active-events`).then((res) => {
-      const newsData = res.data;
-      this.setState({ newsData });
-      console.log("newsData", newsData);
-    });
+    // axios.get(`https://lomads.free.beeceptor.com/active-events`).then((res) => {
+    //   const newsData = res.data;
+    //   this.setState({ newsData });
+    //   console.log("newsData", newsData);
+    // });
     // axios.get(`https://lomads.free.beeceptor.com/active-events`).then((res) => {
     //   const newsData = res.data;
     //   this.setState({ newsData });
@@ -167,7 +364,7 @@ class MainNews extends React.Component {
           </div>
         </div>
         <div className="bottom-col">
-          <div className="news-img-sec">
+          <div className="news-img-sec-blogs">
             <div className="left-col-text">Actualités</div>
             <div className="blogs-section">
               {this.state.blogsData.map((blog) => {
@@ -178,7 +375,9 @@ class MainNews extends React.Component {
                       rel="noopener noreferrer"
                       href={blog.url}
                     >
-                      <div className="card-img-div">HI</div>
+                      <div className="card-img-div">
+                        <div className="blog-title-text">{blog.title}</div>
+                      </div>
                     </a>
                   </>
                 );
@@ -195,128 +394,68 @@ class MainNews extends React.Component {
             <div className="left-col-text">
               Les derniers groupes et évènements
             </div>
-            <div>
-              <div className="card-div">
-                <img
-                  src={NewsOfficeImg}
-                  alt="cardImage"
-                  width="80px"
-                  height="80px"
-                  className="main-news-img"
-                  style={{ objectFit: "contain !important" }}
-                />
-                <div className="img-container1">
-                  <div>
-                    <div className="img-desc-text1">Évènement Title </div>
-                    <div className="img-desc-text2">Description</div>
-                    <div style={{ display: "flex" }}>
-                      <div className="tags">Categorie 1</div>
-                      <div className="tags">Categorie 1</div>
-                      <div className="tags">Categorie 1</div>
+            <div className="post-events-cards">
+              {this.state.pastEvents.map((pastEvent) => {
+                const tagsData = pastEvent.tags.split(",");
+                console.log({ tagsData });
+                return (
+                  <div className="card-div">
+                    <img
+                      src={pastEvent.thumbnail_img}
+                      alt="cardImage"
+                      width="80px"
+                      height="80px"
+                      className="main-news-img"
+                      style={{ objectFit: "contain !important" }}
+                    />
+                    <div className="img-container1">
+                      <div>
+                        <div className="img-desc-text1">{pastEvent.title} </div>
+                        <div className="img-desc-text2">
+                          {pastEvent.description}
+                        </div>
+                        {tagsData.length > 1 && (
+                          <div style={{ display: "flex" }}>
+                            {tagsData.map((tag) => {
+                              return <div className="tags">{tag}</div>;
+                            })}
+                          </div>
+                        )}
+                      </div>
+                      {pastEvent.start_date !== "" && (
+                        <div className="calander-icon-div">
+                          <div className="tag-div">
+                            <div className="tag-date">
+                              {pastEvent.start_date}
+                            </div>
+                            <div className="tag-time">
+                              {pastEvent.start_time}-{pastEvent.end_time}
+                            </div>
+                          </div>
+                          <div style={{ marginLeft: "10px" }}>
+                            <img
+                              src={CalanderIcon}
+                              alt="calander"
+                              height="16px"
+                              width="12px"
+                            />
+                          </div>
+                        </div>
+                      )}
+                      {pastEvent.start_date === "" && (
+                        <div className="football-icon-div">
+                          <img
+                            src={FootballIcon}
+                            alt="calander"
+                            height="25px"
+                            width="25px"
+                          />
+                        </div>
+                      )}
                     </div>
                   </div>
-                  <div className="tag-div">
-                    <div className="tag-date">02/11/2021 </div>
-                    <div className="tag-time">10h-12h</div>
-                  </div>
-                </div>
-              </div>
-              <div className="card-div">
-                <img
-                  src={NewsOfficeImg}
-                  alt="cardImage"
-                  width="80px"
-                  height="80px"
-                  className="main-news-img"
-                />
-                <div className="img-container1">
-                  <div>
-                    <div className="img-desc-text1">Évènement Title </div>
-                    <div className="img-desc-text2">Description</div>
-                    <div style={{ display: "flex" }}>
-                      <div className="tags">Categorie 1</div>
-                      <div className="tags">Categorie 1</div>
-                      <div className="tags">Categorie 1</div>
-                    </div>
-                  </div>
-                  <div className="tag-div">
-                    <div className="tag-date">02/11/2021 </div>
-                    <div className="tag-time">10h-12h</div>
-                  </div>
-                </div>
-              </div>
-              <div className="card-div">
-                <img
-                  src={NewsOfficeImg}
-                  alt="cardImage"
-                  width="80px"
-                  height="80px"
-                  className="main-news-img"
-                />
-                <div className="img-container1">
-                  <div>
-                    <div className="img-desc-text1">Évènement Title </div>
-                    <div className="img-desc-text2">Description</div>
-                    <div style={{ display: "flex" }}>
-                      <div className="tags">Categorie 1</div>
-                      <div className="tags">Categorie 1</div>
-                      <div className="tags">Categorie 1</div>
-                    </div>
-                  </div>
-                  <div className="tag-div">
-                    <div className="tag-date">02/11/2021 </div>
-                    <div className="tag-time">10h-12h</div>
-                  </div>
-                </div>
-              </div>
-              <div className="card-div">
-                <img
-                  src={NewsOfficeImg}
-                  alt="cardImage"
-                  width="80px"
-                  height="80px"
-                  className="main-news-img"
-                />
-                <div className="img-container1">
-                  <div>
-                    <div className="img-desc-text1">Évènement Title </div>
-                    <div className="img-desc-text2">Description</div>
-                    <div style={{ display: "flex" }}>
-                      <div className="tags">Categorie 1</div>
-                      <div className="tags">Categorie 1</div>
-                      <div className="tags">Categorie 1</div>
-                    </div>
-                  </div>
-                  <div className="tag-div">
-                    <div className="tag-date">02/11/2021 </div>
-                    <div className="tag-time">10h-12h</div>
-                  </div>
-                </div>
-              </div>
-              <div className="card-div">
-                <img
-                  src={NewsOfficeImg}
-                  alt="cardImage"
-                  width="80px"
-                  height="80px"
-                  className="main-news-img"
-                />
-                <div className="img-container1">
-                  <div>
-                    <div className="img-desc-text1">Évènement Title </div>
-                    <div className="img-desc-text2">Description</div>
-                    <div style={{ display: "flex" }}>
-                      <div className="tags">Categorie 1</div>
-                      <div className="tags">Categorie 1</div>
-                      <div className="tags">Categorie 1</div>
-                    </div>
-                  </div>
-                  <div className="tag-div">
-                    <div className="tag-date">02/11/2021 </div>
-                    <div className="tag-time">10h-12h</div>
-                  </div>
-                </div>
-              </div>
+                );
+              })}
             </div>
 
             <div className="partner-button">

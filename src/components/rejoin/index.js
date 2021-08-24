@@ -22,14 +22,14 @@ class Rejoin extends React.Component {
         <div className="rejoin-sec">
           <div>
             <div className="rejoin-text">Nous rejoindre</div>
-            <div className="rejoin-text1">
-              <div className="text-wrapper">
+            <div className="nous-rejoin-text1">
+              <div className="nous-text-wrapper">
                 Lomads est à la fois une plateforme événementielle et un réseau
                 social disposant d’une équipe de conseil créatif.
               </div>
             </div>
             <div className="rejoin-text2">
-              <div className="text-wrapper">
+              <div className="nous-text-wrapper">
                 Nous sommes une structure à taille humaine animée par un esprit
                 de famille. Nous sommes en pleine expansion et recherchons des
                 collaborateurs qui se distinguent par leur capacité d’analyse et

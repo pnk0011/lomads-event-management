@@ -24,7 +24,7 @@ class Rejoin extends React.Component {
             <div className="rejoin-text">L’esprit Lomads</div>
 
             <div className="rejoin-text2">
-              <div className="text-wrapper">
+              <div className="text-wrapper-quality">
                 Nous nous connaissons depuis plus de dix ans. D’abord collègues
                 avant de devenir amis, nous sommes restés proches même lorsque
                 nous avons déménagé dans des villes différentes, en Inde mais
@@ -34,34 +34,45 @@ class Rejoin extends React.Component {
             </div>
           </div>
           <div className="quality-img">
-              <div className="quality-back-001">
-                <div className="bg-text">
-                « En confrontant nos expériences, nous avons remarqué qu’il était 
-                toujours difficile, en arrivant dans une nouvelle ville, de se créer un cercle 
-                d’amis et de poursuivre les activités qui nous tenaient à cœur. 
-                <b>Mais nous étions convaincus qu’il était possible de trouver une solution à ce problème. »</b>
-                </div>
+            <div className="quality-back-001">
+              <div className="bg-text">
+                « En confrontant nos expériences, nous avons remarqué qu’il
+                était toujours difficile, en arrivant dans une nouvelle ville,
+                de se créer un cercle d’amis et de poursuivre les activités qui
+                nous tenaient à cœur.
+                <b>
+                  Mais nous étions convaincus qu’il était possible de trouver
+                  une solution à ce problème. »
+                </b>
               </div>
-              <div className="image-human">
-                <div className="name-text">Nishant + Naman</div>
-                <div>
+            </div>
+            <div className="image-human">
+              <div className="name-text">Nishant + Naman</div>
+              <div>
                 <img
-                src={QualityImg1}
-                alt="borderImg"
-                width="324px"
-                height="231px"
-                
-                sName="img-border"
-              />
-                </div>
-            
+                  src={QualityImg1}
+                  alt="borderImg"
+                  width="324px"
+                  height="231px"
+                  sName="img-border"
+                />
               </div>
-             
-              <div className="quality-back-002">
+            </div>
+
+            <div className="quality-back-002">
               <div className="bg-text2">
-              « En fait, nous nous sommes rendus compte que connectés aux réseaux sociaux, nous sommes surtout déconnectés de la réalité.<b> La crise liée au COVID-19 a prouvé que rien ne remplace le contact humain.</b> Lomads s’inspire de cette prise de conscience pour vous aider à créer des liens et à trouver votre place au sein d’une communauté. »
-                </div>
+                « En fait, nous nous sommes rendus compte que connectés aux
+                réseaux sociaux, nous sommes surtout déconnectés de la réalité.
+                <b>
+                  {" "}
+                  La crise liée au COVID-19 a prouvé que rien ne remplace le
+                  contact humain.
+                </b>{" "}
+                Lomads s’inspire de cette prise de conscience pour vous aider à
+                créer des liens et à trouver votre place au sein d’une
+                communauté. »
               </div>
+            </div>
           </div>
           <div className="quality-img-bottom-text">
             <div className="quality-text3">
