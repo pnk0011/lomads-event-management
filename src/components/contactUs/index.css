@@ -88,3 +88,14 @@
   justify-content: center;
   align-items: center;
 }
+
+.contact-us-button {
+  width: 184px;
+  height: 38px;
+  background-color: #ff8200;
+  color: #ffffff;
+  border-radius: 10px;
+  border: #ff8200;
+  font-family: Insignia, Roman;
+  font-size: 14px;
+}

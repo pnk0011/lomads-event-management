@@ -7,7 +7,9 @@ import PartnerBottomImg1 from "../assets/partner-bottom-img1.png";
 import PartnerBottomImg2 from "../assets/partner-bottom-img2.png";
 import PartnerBottomImg3 from "../assets/partner-bottom-img3.png";
 import PartnerBottomImg4 from "../assets/partner-bottom-img4.png";
-import ImgUrl1 from "../assets/explore-bottom-img1.svg";
+import PartnerImg5 from "../assets/partner-img5.png";
+import PartnerImg6 from "../assets/partner-img6.png";
+import PartnerImg7 from "../assets/partner-img7.png";
 import Footer from "../footer";
 
 import "./partner.css";
@@ -41,7 +43,7 @@ function Explore() {
           </div>
           <div className="left-colm">
             <div className="partner-sec1" style={{ marginTop: "180px" }}>
-              <img src={ImgUrl1} alt="partnerImg" />
+              <img src={PartnerImg5} alt="partnerImg" />
               <div>
                 <div className="partner-text1">Organisez vos événements en</div>
                 <div className="partner-text1">toute simplicité</div>
@@ -53,7 +55,7 @@ function Explore() {
               </div>
             </div>
             <div className="partner-sec1" style={{ marginTop: "100px" }}>
-              <img src={ImgUrl1} alt="partnerImg" />
+              <img src={PartnerImg6} alt="partnerImg" />
               <div>
                 <div className="partner-text1">Restez proche de votre</div>
                 <div className="partner-text1">communauté</div>
@@ -66,7 +68,7 @@ function Explore() {
               </div>
             </div>
             <div className="partner-sec1" style={{ marginTop: "100px" }}>
-              <img src={ImgUrl1} alt="partnerImg" />
+              <img src={PartnerImg7} alt="partnerImg" />
               <div>
                 <div className="partner-text1">Créez des communautés</div>
                 <div className="partner-text1">hyperlocales</div>

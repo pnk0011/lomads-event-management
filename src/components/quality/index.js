@@ -7,10 +7,12 @@ import QualityImg03 from "../assets/quality-img3.png";
 import QualityImg04 from "../assets/quality-img4.png";
 import QualityImg05 from "../assets/quality-img5.svg";
 import QualityImg06 from "../assets/quality-img6.svg";
-import PartnerImg2 from "../assets/partner-img1.png";
-import ImgUrl6 from "../assets/suggestion-img3.svg";
+import QualityImg7 from "../assets/quality-img7.png";
+import QualityImg8 from "../assets/quality-img8.png";
+import QualityImg9 from "../assets/quality-img9.png";
+import QualityImg10 from "../assets/quality-img10.png";
+import QualityImg11 from "../assets/quality-img11.png";
 import Footer from "../footer";
-import ImgUrl1 from "../assets/explore-bottom-img1.svg";
 import NavBar from "../nav-bar";
 import "./index.css";
 
@@ -93,7 +95,49 @@ class Rejoin extends React.Component {
           </div>
           <div>
             <div className="quality-background-img1">
-              <div>
+              <div className="quality-img-group">
+                <div>
+                  <img
+                    src={QualityImg8}
+                    alt="ImageRejoin"
+                    height="138px"
+                    width="108px"
+                  />
+                </div>
+                <div className="quality-img7">
+                  <img
+                    src={QualityImg7}
+                    alt="ImageRejoin"
+                    height="191px"
+                    width="150px"
+                  />
+                </div>
+                <div>
+                  <img
+                    src={QualityImg9}
+                    alt="ImageRejoin"
+                    height="86px"
+                    width="64px"
+                  />
+                </div>
+                <div className="quality-img10">
+                  <img
+                    src={QualityImg10}
+                    alt="ImageRejoin"
+                    height="148px"
+                    width="106px"
+                  />
+                </div>
+                <div>
+                  <img
+                    src={QualityImg11}
+                    alt="ImageRejoin"
+                    height="100px"
+                    width="78px"
+                  />
+                </div>
+              </div>
+              <div className="border-bottom-img-align">
                 <img
                   src={QualityBorderImg}
                   alt="QualityBorder"

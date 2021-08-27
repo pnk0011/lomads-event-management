@@ -18,14 +18,18 @@ const ContactUsSection = (props) => {
                 {t("ContactUsSectionText2")}
               </div>
             </div>
-            <div className="diff-sec-button width100" style={{ marginTop: "16px" }}>
-              <button className="devenir-lomads-button">
+            <div
+              className="diff-sec-button width100"
+              style={{ marginTop: "16px" }}
+            >
+              <button className="contact-us-button">
                 {t("BECOMEAPARTNER")}
               </button>
             </div>
           </div>
         </div>
       </div>
+
       <div className="contactus-img">
         <div></div>
         <div></div>

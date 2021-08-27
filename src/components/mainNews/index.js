@@ -367,16 +367,23 @@ class MainNews extends React.Component {
           <div className="news-img-sec-blogs">
             <div className="left-col-text">Actualités</div>
             <div className="blogs-section">
-              {this.state.blogsData.map((blog) => {
+              {this.state.newsData.map((blog) => {
                 return (
                   <>
                     <a
                       target="_blank"
                       rel="noopener noreferrer"
-                      href={blog.url}
+                      href={blog.thumbnail_img}
                     >
                       <div className="card-img-div">
-                        <div className="blog-title-text">{blog.title}</div>
+                        <div
+                          className="blog-title-text"
+                          style={{
+                            backgroundImage: `url(${blog.thumbnail_img})`,
+                          }}
+                        >
+                          {blog.event_title}
+                        </div>
                       </div>
                     </a>
                   </>
@@ -385,9 +392,7 @@ class MainNews extends React.Component {
             </div>
 
             <div className="partner-button">
-              <button className="devenir-lomads-button">
-                DEMANDER LA DÉMO
-              </button>
+              <button className="devenir-lomads-button">AFFICHER PLUS</button>
             </div>
           </div>
           <div className="news-img-sec">
@@ -397,7 +402,7 @@ class MainNews extends React.Component {
             <div className="post-events-cards">
               {this.state.pastEvents.map((pastEvent) => {
                 const tagsData = pastEvent.tags.split(",");
-                console.log({ tagsData });
+
                 return (
                   <div className="card-div">
                     <img

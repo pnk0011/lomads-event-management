@@ -91,30 +91,38 @@ function CommentSection(props) {
           </div>
         </div>
         <div className="suggestion-bottom-sec none">
-          <div className="suggestion-sec-text">
-            <div className="img1">
-              <img src={ImgUrl7} alt="desc" />
-            </div>
-            <div>
-              <div className="des-suggestions">
-                <div style={{ marginBottom: "10px", fontFamily: "Insignia" }}>
-                  {t("GetActionNotifications")}
-                </div>
-                <div className="suggestions-text1">
-                  {t("GetActionNotificationsText")}
+          <div style={{ display: "flex" }}>
+            <div className="suggestion-sec-text">
+              <div className="img1">
+                <img src={ImgUrl7} alt="desc" />
+              </div>
+              <div>
+                <div className="des-suggestions">
+                  <div style={{ marginBottom: "10px", fontFamily: "Insignia" }}>
+                    {t("GetActionNotifications")}
+                  </div>
+                  <div className="suggestions-text1">
+                    {t("GetActionNotificationsText")}
+                  </div>
                 </div>
               </div>
+              <div style={{ marginTop: "30px" }}>
+                <button className="devenir-lomads-button">
+                  {t("BECOMINGLOMADS")}
+                </button>
+              </div>
             </div>
-            <div style={{ marginTop: "30px" }}>
-              <button className="devenir-lomads-button">
-                {" "}
-                {t("BECOMINGLOMADS")}
-              </button>
+            <div style={{ display: "flex" }}>
+              <div>
+                <img src={ImgUrl8} alt="desc" />
+              </div>
+
+              <div className="suggestion-image-07">
+                <img src={ImgUrl9} alt="desc" />
+              </div>
             </div>
           </div>
-          <div>
-            <img src={ImgUrl8} alt="desc" />
-          </div>
+          <div></div>
         </div>
         <div style={{ zIndex: "10" }} className="none">
           <img

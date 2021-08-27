@@ -1,5 +1,5 @@
 import React from "react";
-import ImageUrl from "../assets/office-img.png";
+import LocationIcon from "../assets/locationIcon.png";
 import "./card.css";
 const Card = ({ newsInfo, className = "" }) => {
   console.log("newsInfo", newsInfo);
@@ -10,8 +10,22 @@ const Card = ({ newsInfo, className = "" }) => {
           <div className="card-title">{newsInfo.event_title}</div>
         </div>
         <div className="card-desc-container">
-          <div>
-            <p className="card-desc-text">{newsInfo.event_venue_short}</p>
+          <div className="card-location-icon">
+            <div>
+              <img
+                src={LocationIcon}
+                alt="locationIcon"
+                style={{
+                  width: "11px",
+                  height: "11px",
+                  marginRight: "4px",
+                  marginTop: "4px",
+                }}
+              />
+            </div>
+            <div>
+              <p className="card-desc-text">{newsInfo.event_venue_short}</p>
+            </div>
           </div>
           <div>
             <div className="card-desc-text">{newsInfo.start_date}</div>

@@ -47,3 +47,15 @@
 .carousel .slide {
   text-align: start !important;
 }
+
+.card-location-icon {
+  display: flex;
+  align-items: center;
+}
+
+.location-icon-img {
+  width: 11px;
+  height: 11px;
+  margin-right: 4px;
+  margin-top: 4px;
+}

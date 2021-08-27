@@ -18,7 +18,8 @@
   width: 370px;
   height: 239px;
   border-radius: 10px;
-  background-image: url("../assets/office-news.jpg");
+
+  background-size: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   margin-left: 16px;
 }
@@ -29,6 +30,7 @@
   align-items: center;
   margin-top: 1%;
   margin-bottom: 44px;
+  width: fit-content;
 }
 
 @media (max-width: 1024px) {

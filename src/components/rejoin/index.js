@@ -8,6 +8,7 @@ import RejoinImg4 from "../assets/rejoin-img4.svg";
 import RejoinImg5 from "../assets/rejoin-img5.svg";
 import RejoinImg6 from "../assets/rejoin-img6.svg";
 import RejoinImg7 from "../assets/rejoin-img7.svg";
+import RejoinImg8 from "../assets/rejoin-img8.png";
 import ImgUrl6 from "../assets/suggestion-img3.svg";
 import Footer from "../footer";
 import ImgUrl1 from "../assets/explore-bottom-img1.svg";
@@ -83,70 +84,88 @@ class Rejoin extends React.Component {
             </div>
             <div className="middle-text">
               <div className="rejoin-text5">Notre éthique de travail</div>
-              <div style={{ marginTop: "100px" }}>
-                <div className="rejoin-img5">
-                  <img src={RejoinImg3} alt="RejoinImg" />
+              <div
+                style={{ marginTop: "100px", display: "flex", width: "70%" }}
+              >
+                <div>
+                  <div className="rejoin-img5">
+                    <img src={RejoinImg3} alt="RejoinImg" />
+                  </div>
+                  <div className="align-rejoin-text">
+                    <div className="rejoin-text6">
+                      Aller plus loin, ensemble
+                    </div>
+                    <div className="rejoin-text7">
+                      Nous aidons honnêtement les autres à s’épanouir et à être
+                      remarquables. Pas d’ego.
+                    </div>
+                  </div>
                 </div>
-                <div className="align-rejoin-text">
-                  <div className="rejoin-text6">Aller plus loin, ensemble</div>
-                  <div className="rejoin-text7">
-                    Nous aidons honnêtement les autres à s’épanouir et à être
-                    remarquables. Pas d’ego.
+                <div>
+                  <div className="rejoin-img5">
+                    <img src={RejoinImg8} alt="RejoinImg" />
+                  </div>
+                  <div className="align-rejoin-text">
+                    <div className="rejoin-text6">Faire preuve d’empathie:</div>
+                    <div className="rejoin-text7">
+                      Nous commençons toujours par nos clients. Nous essayons
+                      d’abord de les comprendre avant de parler.
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
             <div className="bottom-text">
               <div>
-                <div style={{ marginTop: "100px" }}>
+                <div style={{ marginTop: "100px", width: "80%" }}>
                   <div className="rejoin-img5">
                     <img src={RejoinImg4} alt="RejoinImg" />
                   </div>
                   <div className="align-rejoin-text">
-                    <div className="rejoin-text6">
-                      Aller plus loin, ensemble
-                    </div>
+                    <div className="rejoin-text6">Biais pour l’action:</div>
                     <div className="rejoin-text8">
-                      Nous aidons honnêtement les autres à s’épanouir et à être
-                      remarquables. Pas d’ego.
+                      Ne vous attardez pas seulement sur les idées, prenez des
+                      actions pour faire avancer vos idées
                     </div>
                   </div>
                 </div>
               </div>
               <div>
-                <div style={{ marginTop: "100px" }}>
+                <div style={{ marginTop: "100px", width: "80%" }}>
                   <div className="rejoin-img5">
                     <img src={RejoinImg5} alt="RejoinImg" />
                   </div>
                   <div className="align-rejoin-text">
-                    <div className="rejoin-text6">
-                      Aller plus loin, ensemble
-                    </div>
+                    <div className="rejoin-text6">L’impact</div>
                     <div className="rejoin-text8">
-                      Nous aidons honnêtement les autres à s’épanouir et à être
-                      remarquables. Pas d’ego.
+                      Nous nous concentrons sur les choses qui produisent le
+                      plus grand impact. Pas de théâtre.
                     </div>
                   </div>
                 </div>
               </div>
               <div>
-                <div style={{ marginTop: "100px" }}>
+                <div style={{ marginTop: "100px", width: "80%" }}>
                   <div className="rejoin-img5">
                     <img src={RejoinImg6} alt="RejoinImg" />
                   </div>
                   <div className="align-rejoin-text">
-                    <div className="rejoin-text6">
-                      Aller plus loin, ensemble
-                    </div>
+                    <div className="rejoin-text6">Créer du sens</div>
                     <div className="rejoin-text8">
-                      Nous aidons honnêtement les autres à s’épanouir et à être
-                      remarquables. Pas d’ego.
+                      Nous nous concentrons d’abord sur le pourquoi, avant de
+                      répondre aux questions quoi et comment.
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div>
+            <div style={{ display: "flex" }}>
+              <div className="rejoin-bottom-img-text1">
+                <div className="rejoin-bottom-img-text-width">
+                  Notre bureau est situé à cote Champs Élysées dans un quartier
+                  aminée avec beaucoup de cafés et restaurants.
+                </div>
+              </div>
               <div className="rejoin-img-bottom">
                 <img src={RejoinImg7} alt="rejoinImg" />
               </div>

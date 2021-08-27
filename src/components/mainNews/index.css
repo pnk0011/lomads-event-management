@@ -174,7 +174,8 @@
 
 .card-img-div {
   margin-bottom: 15px;
-  background-image: url("https://drive.google.com/uc?id=1O-suGDsho8noaFnM0Kfl0CSx-c1IotQ9");
+  background-repeat: no-repeat;
+  background-size: 370px 239px;
   width: 370px;
   height: 239px;
   border-radius: 10px;

@@ -1,3 +1,6 @@
+.partner {
+  margin-top: 100px;
+}
 .partner-text {
   color: #ff8200;
   font-size: 40px;
@@ -106,7 +109,7 @@ img {
 .partner-bottom-imgs {
   width: 100%;
   display: flex;
-justify-content: center;
+  justify-content: center;
   overflow-x: hidden;
   margin-top: 100px;
 }
@@ -115,7 +118,6 @@ justify-content: center;
   border-radius: 10px;
 }
 .bottom-img-margin {
- 
 }
 
 .partner-background-img {

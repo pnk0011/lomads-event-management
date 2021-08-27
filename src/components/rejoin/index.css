@@ -87,6 +87,7 @@
   display: flex;
   justify-content: center;
   margin-top: -30%;
+  margin-left: 200px;
   flex-direction: column;
   align-items: center;
 }
@@ -98,14 +99,12 @@
 
 .rejoin-text6 {
   display: flex;
-
   justify-content: center;
   font-size: 30px;
   font-family: Insignia;
   text-align: center;
   color: #ff8200;
   margin-top: 30px;
-  width: 50%;
 }
 .rejoin-text7 {
   display: flex;
@@ -114,12 +113,13 @@
   font-family: Open Sans;
   color: #1b2b41;
   margin-top: 7px;
-  width: 50%;
   text-align: center;
 }
 
 .bottom-text {
   display: flex;
+  justify-content: space-around;
+  margin-left: 130px;
 }
 
 .rejoin-text8 {
@@ -130,7 +130,7 @@
   color: #1b2b41;
   text-align: center;
   margin-top: 7px;
-  width: 50%;
+
   text-align: center;
 }
 
@@ -138,6 +138,7 @@
   margin-top: 100px;
   display: flex;
   justify-content: flex-end;
+  margin-right: -76px;
 }
 
 .rejoin-bott-text {
@@ -246,4 +247,18 @@
   .footer {
     display: none;
   }
+}
+
+.rejoin-bottom-img-text1 {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 72px;
+
+  margin-bottom: 90px;
+}
+
+.rejoin-bottom-img-text-width {
+  color: #ff8200;
+  font-size: 20px;
+  font-family: Insignia;
 }

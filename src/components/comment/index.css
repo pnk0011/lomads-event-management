@@ -57,7 +57,7 @@ img {
 
 .suggestion-bottom-sec {
   display: flex;
-  margin-left: 5%;
+  justify-content: space-around;
 }
 
 .devenir-lomads-button {
@@ -108,4 +108,10 @@ img {
 .comment-sec-background-img {
   background: url("../assets/suggestion-img4.svg") no-repeat center;
   z-index: 100;
+}
+
+.suggestion-image-07 {
+  margin-left: -235px;
+  z-index: 9999;
+  position: relative;
 }
